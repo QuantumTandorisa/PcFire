@@ -24,4 +24,4 @@ Puedes instalar estas bibliotecas utilizando pip con el siguiente comando:
 Uso
 Para ejecutar el programa, simplemente ejecuta el archivo Python. El programa comenzará a realizar los cálculos intensivos en múltiples hilos y mostrará el resultado final. Si deseas detener la ejecución del programa, ingresa el comando "stop" cuando se te solicite.
 
-Nota: Ten en cuenta la advertencia sobre el calentamiento de la PC mencionada anteriormente y monitorea la temperatura de tu sistema mientras se ejecuta el programa.
+Nota: Ten en cuenta que se trata de elevar la tempratura, monitorea el sistema mientras se ejecuta el programa.
