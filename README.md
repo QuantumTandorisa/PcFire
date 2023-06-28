@@ -1,4 +1,5 @@
-Readme
+Readme.
+
 Programa de cálculos intensivos
 Este programa es un ejemplo de cómo distribuir tareas intensivas de cálculo en paralelo utilizando la biblioteca concurrent.futures de Python. El objetivo es realizar cálculos intensivos utilizando la biblioteca NumPy y distribuir la carga de trabajo en múltiples hilos para aprovechar los recursos de la CPU.
 
