@@ -3,7 +3,7 @@ import concurrent.futures
 import time
 
 def intensive_calculation(start, end):
-    array = np.random.rand(end - start)  # Crear un arreglo de números aleatorios / Crear un arreglo de números aleatorios
+    array = np.random.rand(end - start)  # Create an array of random numbers / Crear un arreglo de números aleatorios
 
     result = np.sum(np.sin(np.sqrt(array)))  # Intensive calculation with NumPy / Cálculo intensivo con NumPy
 
