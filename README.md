@@ -19,9 +19,7 @@ NumPy
 concurrent.futures
 Puedes instalar estas bibliotecas utilizando pip con el siguiente comando:
 
-'''
-pip install 
-'''
+        pip install numpy
 
 Uso
 Para ejecutar el programa, simplemente ejecuta el archivo Python. El programa comenzará a realizar los cálculos intensivos en múltiples hilos y mostrará el resultado final. Si deseas detener la ejecución del programa, ingresa el comando "stop" cuando se te solicite.
