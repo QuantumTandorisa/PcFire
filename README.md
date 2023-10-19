@@ -10,7 +10,7 @@ PcFire es una herramienta que permite realizar cálculos intensivos en paralelo 
 - Bibliotecas requeridas, que puedes instalar ejecutando `pip install -r requirements.txt`.
 
 ## Uso
--  lona este repositorio en tu sistema.
+-  Clona este repositorio en tu sistema.
 -  Ejecuta el programa con el comando `python3 PcFire.py`.
 
 Las instancias se crearán y comenzarán a realizar cálculos. Presiona Ctrl+C para detener todas las instancias de manera ordenada.
