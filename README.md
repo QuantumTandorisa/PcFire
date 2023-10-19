@@ -1,27 +1,17 @@
-Readme.
+PcFire es una herramienta que permite realizar cálculos intensivos en paralelo mediante la creación de múltiples instancias del programa. Cada instancia ejecuta cálculos complejos utilizando la biblioteca NumPy y se detiene después de un período de tiempo predefinido.
 
-Programa de cálculos intensivos
-Este programa es un ejemplo de cómo distribuir tareas intensivas de cálculo en paralelo utilizando la biblioteca concurrent.futures de Python. El objetivo es realizar cálculos intensivos utilizando la biblioteca NumPy y distribuir la carga de trabajo en múltiples hilos para aprovechar los recursos de la CPU.
+## Características
+- Crea y ejecuta múltiples instancias del programa en paralelo.
+- Realiza cálculos intensivos utilizando NumPy.
+- Captura la señal SIGINT (Ctrl+C) para detener todas las instancias de manera ordenada.
 
-Funcionalidad:
-El programa consta de dos partes principales:
+## Requisitos
+- Python 3
+- Bibliotecas requeridas, que puedes instalar ejecutando `pip install -r requirements.txt`.
 
-La función intensive_calculation(start, end) realiza un cálculo intensivo en un rango de valores utilizando la biblioteca NumPy. Genera un arreglo de números aleatorios y realiza una serie de operaciones sobre ellos para obtener un resultado.
+## Uso
+-  lona este repositorio en tu sistema.
+-  Ejecuta el programa con el comando `python3 PcFire.py`.
 
-La función main() distribuye la carga de trabajo en múltiples hilos mediante ThreadPoolExecutor y recopila los resultados de las tareas para obtener el resultado final.
-
-El programa permite ejecutar continuamente las tareas de cálculo intensivo mientras el usuario no ingrese el comando "stop". Se pausa durante 1 segundo entre cada ejecución del bucle para evitar un uso excesivo de los recursos de la CPU.
-
-Requisitos:
-El programa requiere tener instaladas las siguientes bibliotecas de Python:
-
-NumPy
-concurrent.futures
-Puedes instalar estas bibliotecas utilizando pip con el siguiente comando:
-
-        pip install numpy
-
-Uso
-Para ejecutar el programa, simplemente ejecuta el archivo Python. El programa comenzará a realizar los cálculos intensivos en múltiples hilos y mostrará el resultado final. Si deseas detener la ejecución del programa, ingresa el comando "stop" cuando se te solicite.
-
-Nota: Ten en cuenta que se trata de elevar la tempratura, monitorea el sistema mientras se ejecuta el programa.
+Las instancias se crearán y comenzarán a realizar cálculos. Presiona Ctrl+C para detener todas las instancias de manera ordenada.
+Es una herramienta que realiza cálculos intensivos en paralelo y puede utilizar recursos significativos de la CPU. Asegúrate de utilizar este programa de manera responsable y ética. No lo utilices para fines maliciosos ni para sobrecargar servidores o recursos de red ajenos sin permiso. Siempre respeta los términos de uso y las políticas de red donde ejecutes este programa.
