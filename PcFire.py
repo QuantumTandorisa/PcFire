@@ -32,9 +32,9 @@ import signal
 from multiprocessing import Process 
 
 def intensive_calculation(start, end):
-    array = np.random.rand(end - start)  # Create an array of random numbers
+    array = np.random.rand(end - start)  # Create an array of random numbers // Crear una matriz de números aleatorios
 
-    result = np.sum(np.sin(np.sqrt(array)))  # Intensive calculation with NumPy
+    result = np.sum(np.sin(np.sqrt(array)))  # Intensive calculation with NumPy // Cálculo intensivo con NumPy
 
     return result
 
@@ -50,13 +50,13 @@ def main():
             end = (i + 1) * chunk_size + 1
             futures.append(executor.submit(intensive_calculation, start, end))
         
-        # Collect and print the task results
+        # Collect and print the task results // Recoger e imprimir los resultados de la tarea
         result = sum(f.result() for f in futures)
         print("El resultado es:", result)
 
 def create_and_run():
     while True:
-        pid = os.fork()  # Bifurca el proceso actual
+        pid = os.fork()  # Bifurcates the current process // Bifurcates the current process
         if pid == 0:
             main()
             exit()
@@ -71,10 +71,10 @@ def signal_handler(sig, frame):
     exit()
 
 if __name__ == '__main__':
-    num_instances = 5  # Número de instancias que deseas ejecutar en paralelo
+    num_instances = 5  # Number of instances you want to run in parallel // Número de instancias que desea ejecutar en paralelo
     processes = []
 
-    # Captura la señal SIGINT (Ctrl+C) para detener los procesos
+    # Capture SIGINT signal (Ctrl+C) to stop processes // Captura la señal SIGINT (Ctrl+C) para detener los procesos
     signal.signal(signal.SIGINT, signal_handler)
 
     for _ in range(num_instances):
